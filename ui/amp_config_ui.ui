@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>440</width>
+    <height>315</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>440</width>
+    <height>315</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>参数设置</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*            QWidget {
+                background-color: white;
+            }</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>275</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>275</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>应用</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>275</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 1px solid palette(mid);
+    border-radius: 12px;
+    color: palette(button-text);
+    background: palette(button);
+}
+
+QPushButton:pressed {
+    background: #f3f3f3
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset theme="help-browser"/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>415</width>
+     <height>205</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <row>
+    <property name="text">
+     <string>1.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>2.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>3.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>4.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>5.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>6.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>7.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>8.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>9.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>10.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>11.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>12.</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>13.</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Configuration</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignLeading|AlignVCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Value</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignLeading|AlignVCenter</set>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>噪声强度（gaussian var）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>亮度系数（alpha）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>擦除区域边长（length）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>擦除区域数量（hole number）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>擦除区域和box重叠阈值（box_thre）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="4" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string>最大旋转角度（angle）</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="5" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="6" column="0">
+    <property name="text">
+     <string>噪声处理概率</string>
+    </property>
+   </item>
+   <item row="7" column="0">
+    <property name="text">
+     <string>亮度处理概率</string>
+    </property>
+   </item>
+   <item row="8" column="0">
+    <property name="text">
+     <string>擦除处理概率</string>
+    </property>
+   </item>
+   <item row="9" column="0">
+    <property name="text">
+     <string>旋转处理概率</string>
+    </property>
+   </item>
+   <item row="10" column="0">
+    <property name="text">
+     <string>平移处理概率</string>
+    </property>
+   </item>
+   <item row="11" column="0">
+    <property name="text">
+     <string>镜像处理概率</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>311</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>输入关键字进行搜索...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>25</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

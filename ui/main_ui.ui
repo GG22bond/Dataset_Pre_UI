@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Pre Processing</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>281</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>目标检测数据集处理</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_VOC_to_COCO">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>VOC转COCO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_YOLO_to_VOC">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>YOLO转VOC</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_COCO_to_YOLO">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COCO转YOLO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_COCO_to_VOC">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COCO转VOC</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_YOLO_to_COCO">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>YOLO转COCO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_VOC_to_YOLO">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>VOC转YOLO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_amp">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据增强</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>161</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>实例分割数据集处理</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_Labelme_to_COCO">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>121</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Labelme转COCO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_COCO_to_YOLO_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COCO转YOLO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_COCO_to_Labelme">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>121</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COCO转Labelme</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_help">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>320</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: 1px solid palette(mid);
+    border-radius: 12px;
+    color: palette(button-text);
+    background: palette(button);
+}
+
+QPushButton:pressed {
+    background: #f3f3f3
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="help-browser"/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>161</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>图像处理</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_style_trans">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>风格迁移</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_change_size">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>图像缩放</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>665</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>目标检测数据集处理</string>
+     </property>
+     <addaction name="actionVOC_to_YOLO"/>
+     <addaction name="actionYOLO_to_VOC"/>
+     <addaction name="actionCOCO_to_YOLO"/>
+     <addaction name="actionYOLO_to_COCO"/>
+     <addaction name="actionCOCO_to_VOC"/>
+     <addaction name="actionVOC_to_COCO"/>
+     <addaction name="action_dataset_amp"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>实例分割数据集处理</string>
+     </property>
+     <addaction name="actionCOCO_to_Labelme"/>
+     <addaction name="actionLabelme_to_COCO"/>
+     <addaction name="actionCOOC_to_YOLO_seg"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>图像处理</string>
+     </property>
+     <addaction name="action_change_image_size"/>
+     <addaction name="action_style_transfer"/>
+    </widget>
+    <addaction name="menu_4"/>
+    <addaction name="menu_5"/>
+    <addaction name="menu_6"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionGithub"/>
+    <addaction name="actionGitCode"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionVOC_to_YOLO">
+   <property name="text">
+    <string>VOC转YOLO</string>
+   </property>
+  </action>
+  <action name="actionYOLO_to_VOC">
+   <property name="text">
+    <string>YOLO转VOC</string>
+   </property>
+  </action>
+  <action name="actionCOCO_to_YOLO">
+   <property name="text">
+    <string>COCO转YOLO</string>
+   </property>
+  </action>
+  <action name="actionYOLO_to_COCO">
+   <property name="text">
+    <string>YOLO转COCO</string>
+   </property>
+  </action>
+  <action name="actionCOCO_to_Labelme">
+   <property name="text">
+    <string>COCO转Labelme</string>
+   </property>
+  </action>
+  <action name="actionLabelme_to_COCO">
+   <property name="text">
+    <string>Labelme转COCO</string>
+   </property>
+  </action>
+  <action name="actionCOOC_to_YOLO_seg">
+   <property name="text">
+    <string>COOC转YOLO</string>
+   </property>
+  </action>
+  <action name="actionCOCO_to_VOC">
+   <property name="text">
+    <string>COCO转VOC</string>
+   </property>
+  </action>
+  <action name="actionVOC_to_COCO">
+   <property name="text">
+    <string>VOC转COCO</string>
+   </property>
+  </action>
+  <action name="action_dataset_amp">
+   <property name="text">
+    <string>数据增强</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="text">
+    <string>Github</string>
+   </property>
+  </action>
+  <action name="actionGitCode">
+   <property name="text">
+    <string>GitCode</string>
+   </property>
+  </action>
+  <action name="action_change_image_size">
+   <property name="text">
+    <string>图像缩放</string>
+   </property>
+  </action>
+  <action name="action_style_transfer">
+   <property name="text">
+    <string>风格迁移</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
